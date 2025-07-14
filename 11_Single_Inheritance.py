@@ -9,4 +9,3 @@ class Male(Human):
 
 male_1 = Male()
 male_1.eat()
-
