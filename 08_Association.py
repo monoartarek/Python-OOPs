@@ -1,15 +1,17 @@
-#class 1
-class Doctor:
-    def treat(self, patient):
-        print(f"Doctor is treating {patient.name}")
-
-#class 2
-class Patient:
+class School:
     def __init__(self, name):
         self.name = name
 
-p = Patient("Rahim")
-d = Doctor()
-d.treat(p) # Association: just object pass korlam
+class Teacher:
+    def __init__(self, name, school):
+        self.name = name
+        self.school = school  # Association
 
+    def show_info(self):
+        print(f"{self.name} works at {self.school.name}")
 
+# ব্যবহার:
+s1 = School("Oxford International School")
+t1 = Teacher("Mr. Karim", s1)
+
+t1.show_info()
